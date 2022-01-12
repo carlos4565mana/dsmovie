@@ -22,6 +22,7 @@ public class MovieDTO {
 		this.image = image;
 	}
 	
+	//argumento da entidade
 	public MovieDTO(Movie movie) {
 		id = movie.getId();
 		title = movie.getTitle();
