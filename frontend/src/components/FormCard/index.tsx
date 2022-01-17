@@ -14,6 +14,8 @@ function FormCard({movieId}:Props){
   const navigate = useNavigate();
   const [movie, setMovie] = useState<Movie>();
 
+  //axios.get('url').then(response => {setMovie(response.data)}).then().catch(console.log("ops!! ocorreu um Erro")).finally(console.log("passei pro tudo !!!"));
+
   useEffect(() => {
     axios.get(`${BASE_URL}/movies/${movieId}`)
           .then(reponse => {
@@ -82,3 +84,4 @@ function FormCard({movieId}:Props){
   );
 }
 export default FormCard;
+
